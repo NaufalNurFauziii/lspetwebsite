@@ -1352,6 +1352,114 @@ a:focus {
 
 /* skema section end */
 
+/* Tuk Start Section */
+/* skema page pltb */
+.banner_page_head_tuk {
+    background-image: url('../images/banner5.jpg'); 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    margin-top: 7rem;
+    margin-left: 9rem;
+    margin-right: 9rem;
+    margin-bottom: 0rem;
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.banner_page_head_tuk .titlepage h3 {
+  background-color: #215aaf60;
+  margin-left: 600px;
+  margin-right: 600px;
+  /* border-radius: 90px; */
+}
+
+.banner_page_head_tuk h3 {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.tuk-section {
+    margin-left: 9rem;
+    margin-right: 9rem;
+    margin-top: 4rem;
+}
+
+.tuk-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.tuk-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e1e1e;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.tuk-subtitle {
+    text-align: justify;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.container-tuk {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-bottom: 35px;
+}
+
+.container-tuk .card {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: .35s ease;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    /* width: 80%; */
+}
+
+.container-tuk .card-img-top {
+    width: 200px;
+    /* height: 300px; */
+    /* object-fit: cover; */
+    transition: .35s ease;
+    padding-top: 25px;
+}
+
+.container-tuk .card-body {
+    padding: 18px;
+}
+
+.container-tuk .card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1.4;
+    margin-bottom: 14px;
+}
+
+.container-tuk .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.14);
+}
+
+.container-tuk .card:hover .card-img-top {
+    transform: scale(1.05);
+    filter: brightness(0.85) saturate(1.3);
+}
+
 
 /* asesor section start */
 .asesor_section {
