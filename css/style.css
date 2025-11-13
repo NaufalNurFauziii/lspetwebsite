@@ -1460,7 +1460,6 @@ a:focus {
     filter: brightness(0.85) saturate(1.3);
 }
 
-
 /* asesor section start */
 .asesor_section {
   background-image: url(../images/banner2.jpg);
@@ -1517,6 +1516,104 @@ a:focus {
 
 
 /* asessor section end */
+
+/* asessor page section start */
+.banner_page_head_asesor {
+    background-image: url('../images/banner5.jpg'); 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    margin-top: 7rem;
+    margin-left: 9rem;
+    margin-right: 9rem;
+    margin-bottom: 0rem;
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.banner_page_head_asesor .titlepage h3 {
+  background-color: #215aaf60;
+  margin-left: 600px;
+  margin-right: 600px;
+  /* border-radius: 90px; */
+}
+
+.banner_page_head_asesor h3 {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.asesor-section {
+    margin-left: 9rem;
+    margin-right: 9rem;
+    margin-top: 4rem;
+}
+
+.asesor-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.asesor-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e1e1e;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+    input[type="text"] {
+        margin-left: 8%;
+        margin-bottom: 1rem;
+        padding: 8px;
+        width: 40%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    table {
+        width: 85%;
+        margin-left: 8%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        text-align: left;
+        padding: 10px;
+    }
+    th {
+        background-color: #f3f3f3;
+        cursor: pointer;
+    }
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    .pagination {
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+        margin-left: 40%;
+        margin-right: 40%;
+        align-items: center;
+    }
+    .pagination button {
+        padding: 5px 10px;
+        margin: 0 2px;
+        border: 1px solid #aaa;
+        background-color: #fff;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .pagination button.active {
+        background-color: #007bff;
+        color: #fff;
+        border-color: #007bff;
+    }
 
 /* about us page section */
 .about_section {
