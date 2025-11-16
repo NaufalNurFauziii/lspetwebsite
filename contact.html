@@ -45,7 +45,7 @@
                             </ul>
                          </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="#">Skema</a>
+                           <a class="nav-link" href="skema.html">Skema</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="blog_list.html">Berita</a>
@@ -100,57 +100,59 @@
       <!-- end inner page section -->
       <!-- contact section -->
       <section class="contact-section">
-  <div class="contact-container">
-    <!-- Kiri: Info Kontak -->
-    <div class="contact-info">
-      <h4>KONTAK</h4>
-      <h2>Hubungi Kami Untuk<br>Informasi Lebih Lanjut.</h2>
+         
+         <div class="contact-container">
+            <!-- Kiri: Info Kontak -->
+            <div class="contact-info">
+               <h4>KONTAK</h4>
+               <h2>Hubungi Kami Untuk<br>Informasi Lebih Lanjut.</h2>
+               
+               <div class="contact-item">
+               <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+               <div>
+                  <p>Email:</p>
+                  <span>sekretariat@perdanavokasinusantara.co.id</span>
+               </div>
+               </div>
 
-      <div class="contact-item">
-        <div class="icon-circle"><i class="fas fa-envelope"></i></div>
-        <div>
-          <p>Email:</p>
-          <span>sekretariat@perdanavokasinusantara.co.id</span>
-        </div>
-      </div>
+               <div class="contact-item">
+               <div class="icon-circle"><i class="fas fa-phone"></i></div>
+               <div>
+                  <p>Telepon:</p>
+                  <span>+62-851-7441-5357</span>
+               </div>
+               </div>
 
-      <div class="contact-item">
-        <div class="icon-circle"><i class="fas fa-phone"></i></div>
-        <div>
-          <p>Telepon:</p>
-          <span>+62-851-7441-5357</span>
-        </div>
-      </div>
-
-      <div class="contact-item">
-        <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
-        <div>
-          <p>Alamat:</p>
-          <span>Komplek Green Ville @Gofur Jl. Green Ville Raya No.7 Kavling No 156 Desa Cilame Kecamatan Ngamprah Kab. Bandung Barat 40552</span>
-        </div>
-      </div>
-    </div>
+               <div class="contact-item">
+               <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+               <div>
+                  <p>Alamat:</p>
+                  <span>Jl. Green Ville Raya No.7 Kavling No 156 Desa Cilame Kecamatan Ngamparah Kab. Bandung Barat 40552</span>
+               </div>
+               </div>
+            </div>
 
     <!-- Kanan: Form -->
     <div class="contact-form">
       <p class="subtitle">Kami siap Melayani Anda</p>
       <h2>Isi Formulir Berikut</h2>
 
-      <form>
-        <div class="form-row">
-          <input type="text" placeholder="Nama *" required>
-          <input type="email" placeholder="Email *" required>
-        </div>
+      <form action="contact-process.php" method="POST">
+         <div class="form-row">
+            <input type="text" name="name" placeholder="Nama *" required>
+            <input type="email" name="email" placeholder="Email *" required>
+         </div>
 
-        <div class="form-row">
-          <input type="text" placeholder="No. Telepon">
-          <input type="text" placeholder="Instansi">
-        </div>
+         <div class="form-row">
+            <input type="text" name="phone" placeholder="No. Telepon">
+            <input type="text" name="instansi" placeholder="Instansi">
+         </div>
 
-        <textarea placeholder="Pesan Anda"></textarea>
+         <textarea name="message" placeholder="Pesan Anda"></textarea>
 
-        <button type="submit" class="btn-submit">submit</button>
+         <button type="submit" class="btn-submit">submit</button>
       </form>
+
     </div>
   </div>
 
@@ -163,85 +165,61 @@
   </div>
 </section>      
       <!-- contact section -->
-      <!-- footer section -->
-      <footer class="footer_section">
+      <!-- footer start -->
+      <footer>
          <div class="container">
             <div class="row">
-               <div class="col-md-4 footer-col">
-                  <div class="footer_contact">
-                     <h4>
-                        Reach at..
-                     </h4>
-                     <div class="contact_link_box">
-                        <a href="">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>
-                        Location
-                        </span>
-                        </a>
-                        <a href="">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <span>
-                        Call +01 1234567890
-                        </span>
-                        </a>
-                        <a href="">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <span>
-                        demo@gmail.com
-                        </span>
-                        </a>
+               <div class="col-md-4">
+                   <div class="full">
+                      <div class="logo_footer">
+                        <a href="#"><img width="150" src="images/logo-lsp.png" alt="#" /><img width="150" style="padding-left: 5px;" src="images/logo-bnsp.png" alt=""></a>
+                      </div>
+                      <div class="information_f">
+                        <p><strong>ALAMAT:</strong> Jl. Green Ville Raya No.7 Kavling No 156 Desa Cilame Kecamatan Ngamparah Kab. Bandung Barat 40552</p>
+                        <p><strong>TELEPHONE:</strong> +62 812-1892-2221</p>
+                        <p><strong>MOBILE:</strong> +62 851-7441-5357</p>
+                        <p><strong>EMAIL:</strong> yourmain@gmail.com</p>
+                      </div>
+                   </div>
+               </div>
+               <div class="col-md-8">
+                  <div class="row">
+                  <div class="col-md-10">
+                     <div class="row">
+                        <div class="col-md-6">
+                     <div class="widget_menu">
+                        <h3>Menu</h3>
+                        <ul>
+                           <li><a href="index.html">Beranda</a></li>
+                           <li><a href="about.html">Tentang Kami</a></li>
+                           <li><a href="skema.html">Skema</a></li>
+                           <li><a href="blog_list.html">Berita</a></li>
+                           <li><a href="contact.html">Hubungi Kami</a></li>
+                        </ul>
                      </div>
                   </div>
-               </div>
-               <div class="col-md-4 footer-col">
-                  <div class="footer_detail">
-                     <a href="index.html" class="footer-logo">
-                     Famms
-                     </a>
-                     <p>
-                        Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
-                     </p>
-                     <div class="footer_social">
-                        <a href="">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                        <a href="">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                        <a href="">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
-                        <a href="">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                        <a href="">
-                        <i class="fa fa-pinterest" aria-hidden="true"></i>
-                        </a>
+                  <div class="col-md-6">
+                     <div class="widget_menu" style="padding-left: 0;">
+                        <h3>lainnya</h3>
+                        <ul>
+                           <li><a href="skema-plts.html">Pembangkit Listrik Tenaga Surya</a></li>
+                           <li><a href="#">Pembangkit Listrik Tenaga Bayu</a></li>
+                           <li><a href="#">Pembangkit Listrik Tenaga Mikro Hidro</a></li>
+                           <li><a href="#">Pembangkit Listrik Tenaga Bio gas</a></li>
+                           <li><a href="#">Tempat Uji Praktik</a></li>
+                           <li><a href="asesor-page.html">Asesor</a></li>
+                        </ul>
                      </div>
                   </div>
-               </div>
-               <div class="col-md-4 footer-col">
-                  <div class="map_container">
-                     <div class="map">
-                        <div id="googleMap"></div>
                      </div>
+                  </div>     
+                  
                   </div>
-               </div>
-            </div>
-            <div class="footer-info">
-               <div class="col-lg-7 mx-auto px-0">
-                  <p>
-                     &copy; <span id="displayYear"></span> All Rights Reserved By
-                     <a href="https://html.design/">Free Html Templates</a><br>
-         
-                     Distributed By <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
-                  </p>
                </div>
             </div>
          </div>
       </footer>
-      <!-- footer section -->
+      <!-- footer end -->
       <!-- jQery -->
       <script src="js/jquery-3.4.1.min.js"></script>
       <!-- popper js -->
