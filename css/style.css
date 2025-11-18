@@ -1783,6 +1783,10 @@ a:focus {
     .no-reg {
       text-align: center;
     }
+    .kode-unit {
+      text-align: center;
+      width: 25%;
+    }
 
 
 /* about us page section */
@@ -2118,6 +2122,76 @@ a:focus {
   text-align: left;
 }
 
+.galeri-container {
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* gap: 15px; */
+  margin-bottom: 2rem;
+}
+
+.galeri-detail {
+  display: flex;
+  background-color: rgba(221, 221, 221, 0.274);
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  /* margin-left: 1rem; */
+}
+
+.galeri-detail img {
+  /* display: flex; */
+  width: 200px;
+  object-fit: cover;
+  margin-left: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+} 
+
+.galeri-detail img:hover {
+  opacity: 0.8;
+}
+
+/* Modal Background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  /* padding-top: 200px; */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+/* Fullscreen Image */
+.modal-content {
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 80%;
+  height: 80vh;
+  object-fit: cover;
+  display: block;
+  ;
+
+  /* max-width: 1000px; */
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 /* new carousel */
 .news_slider_section {
   padding-top: 7rem;
@@ -2442,6 +2516,10 @@ a:focus {
   color: white;
   border: #00000000;
 }
+.container_news .card:hover{
+  transform: scale(1.008);
+  transition: ease-in-out 0.3s;
+}
 
 .another-news .card p{
   margin-bottom: 0;
@@ -2467,9 +2545,53 @@ a:focus {
 }
 
 /* contact page */
-/* ===========================
-   CONTACT PAGE
-   ===========================*/
+.banner_page_head_contact {
+    position: relative;
+    background-image: url('../images/contact-banner.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 220px;
+    padding-bottom: 220px;
+    margin-top: 7rem;
+    margin-left: 9rem;
+    margin-right: 9rem;
+    margin-bottom: 0rem;
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden; 
+    height: 488px;
+}
+
+.banner_page_head_contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.507); 
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.banner_page_head_contact * {
+    position: relative;
+    z-index: 2;
+}
+
+.banner_page_head_contact .titlepage h3 {
+  margin-left: 600px;
+  margin-right: 600px;
+  /* border-radius: 90px; */
+}
+
+.banner_page_head_contact h3 {
+    font-size: 42px;
+    font-weight: 800;
+}
+
 .contact-section {
   padding: 70px 0;
   background: #f9fafb;
@@ -2545,6 +2667,7 @@ a:focus {
   padding: 40px 30px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  
 }
 
 .contact-form .subtitle {
@@ -2559,37 +2682,67 @@ a:focus {
 }
 
 /* INPUT */
-.form-row {
+/* ============================
+   FORM LAYOUT
+============================ */
+.contact-form .form-row {
   display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
 }
 
 .form-row input {
   flex: 1;
+  text-align: left;
 }
 
+.form-row .name {
+  margin-right: 15px;
+  height: 50px;
+  margin-left: 0rem;
+  width: 400px;
+}
+.form-row .phone {
+  height: 50px;
+  margin-left: 0rem;
+}
+.form-row .instansi {
+  height: 50px;
+  margin-left: 0rem;
+}
+.form-row .phone {
+  margin-right: 15px;
+  height: 50px;
+  margin-left: 0rem;
+}
+
+
+/* ============================
+   FORM INPUTS (INPUT & TEXTAREA)
+============================ */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 13px 15px;
-  border-radius: 8px;
+  /* padding: 13px 15px; */
   border: 1px solid #dcdcdc;
+  border-radius: 8px;
   font-size: 15px;
-  transition: .2s;
+  transition: 0.2s;
+  outline: none;
 }
 
+/* Focus State */
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: #0c6f3a;
   box-shadow: 0 0 0 3px rgba(12, 111, 58, 0.1);
 }
 
+/* Textarea */
 .contact-form textarea {
   height: 140px;
   resize: none;
   margin-bottom: 20px;
 }
+
 
 /* BUTTON */
 .btn-submit {

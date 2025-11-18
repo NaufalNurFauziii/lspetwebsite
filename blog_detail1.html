@@ -145,7 +145,19 @@
             <p>
                 Melalui kolaborasi antara POLBAN dan LSP Energi Terbarukan, kegiatan sertifikasi ini diharapkan menjadi langkah awal bagi pengembangan SDM unggul yang mampu mendukung percepatan transisi energi bersih di Indonesia. Dengan semakin banyaknya lulusan tersertifikasi, Indonesia semakin siap menghadapi tantangan global dalam mewujudkan sistem energi yang berkelanjutan dan berdaya saing tinggi.
             </p>
-        </div>
+            <div class="galeri-container">
+               <h5 style="text-align: left;">FOTO KEGIATAN</h5>
+               <div class="galeri-detail">
+                  <img src="images/berita/berita-2/1.jpg" alt="">
+                  <img src="images/berita/berita-2/2.jpg" alt="">
+                  <img src="images/berita/berita-2/3.jpg" alt="">
+                  <img src="images/berita/berita-2/4.jpg" alt="">
+               </div>
+               <div id="imageModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="modalImg">
+               </div>
+            </div>
     </section>      
     <!-- end detail news section -->
     <!-- another news section -->
@@ -269,47 +281,71 @@
             blogs.forEach(blog => container.appendChild(blog));
          });
       </script>
-<script>
-// Sort news cards by date descending, only for .blog elements
-function parseIndoDate(str) {
-  const bulan = {
-    'Januari': 0, 'Februari': 1, 'Maret': 2, 'April': 3, 'Mei': 4, 'Juni': 5,
-    'Juli': 6, 'Agustus': 7, 'September': 8, 'Oktober': 9, 'November': 10, 'Desember': 11
-  };
-  let parts = str.split(' ');
-  if (parts.length !== 3) return new Date(str);
-  let day = parseInt(parts[0]);
-  let month = bulan[parts[1]];
-  let year = parseInt(parts[2]);
-  return new Date(year, month, day);
-}
+      <script>
+      // Sort news cards by date descending, only for .blog elements
+      function parseIndoDate(str) {
+      const bulan = {
+         'Januari': 0, 'Februari': 1, 'Maret': 2, 'April': 3, 'Mei': 4, 'Juni': 5,
+         'Juli': 6, 'Agustus': 7, 'September': 8, 'Oktober': 9, 'November': 10, 'Desember': 11
+      };
+      let parts = str.split(' ');
+      if (parts.length !== 3) return new Date(str);
+      let day = parseInt(parts[0]);
+      let month = bulan[parts[1]];
+      let year = parseInt(parts[2]);
+      return new Date(year, month, day);
+      }
 
-function sortNewsCards() {
-  const container = document.querySelector('.container_news');
-  if (!container) return;
-  // Only sort .blog elements, do not touch nav.pagination
-  const blogs = Array.from(container.querySelectorAll('.blog'));
-  const nav = container.querySelector('nav');
-  blogs.sort(function(a, b) {
-    let dateA = a.querySelector('.date-news');
-    let dateB = b.querySelector('.date-news');
-    let dA = dateA ? parseIndoDate(dateA.textContent.replace(/[^0-9A-Za-z ]/g, '').trim()) : new Date(0);
-    let dB = dateB ? parseIndoDate(dateB.textContent.replace(/[^0-9A-Za-z ]/g, '').trim()) : new Date(0);
-    return dB - dA;
-  });
-  // Remove all .blog elements
-  blogs.forEach(blog => container.removeChild(blog));
-  // Re-insert sorted .blog elements before nav.pagination
-  blogs.forEach(blog => {
-    if (nav) {
-      container.insertBefore(blog, nav);
-    } else {
-      container.appendChild(blog);
-    }
-  });
-}
+      function sortNewsCards() {
+      const container = document.querySelector('.container_news');
+      if (!container) return;
+      // Only sort .blog elements, do not touch nav.pagination
+      const blogs = Array.from(container.querySelectorAll('.blog'));
+      const nav = container.querySelector('nav');
+      blogs.sort(function(a, b) {
+         let dateA = a.querySelector('.date-news');
+         let dateB = b.querySelector('.date-news');
+         let dA = dateA ? parseIndoDate(dateA.textContent.replace(/[^0-9A-Za-z ]/g, '').trim()) : new Date(0);
+         let dB = dateB ? parseIndoDate(dateB.textContent.replace(/[^0-9A-Za-z ]/g, '').trim()) : new Date(0);
+         return dB - dA;
+      });
+      // Remove all .blog elements
+      blogs.forEach(blog => container.removeChild(blog));
+      // Re-insert sorted .blog elements before nav.pagination
+      blogs.forEach(blog => {
+         if (nav) {
+            container.insertBefore(blog, nav);
+         } else {
+            container.appendChild(blog);
+         }
+      });
+      }
 
-document.addEventListener('DOMContentLoaded', sortNewsCards);
-</script>
+      document.addEventListener('DOMContentLoaded', sortNewsCards);
+      </script>
+      <script>
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImg");
+      const images = document.querySelectorAll(".galeri-detail img");
+      const closeModal = document.querySelector(".close");
+
+      images.forEach(img => {
+         img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+         };
+      });
+
+      closeModal.onclick = function() {
+         modal.style.display = "none";
+      };
+
+      modal.onclick = function(e) {
+         if (e.target === modal) {
+            modal.style.display = "none";
+         }
+      };
+      </script>
+
    </body>
 </html>
