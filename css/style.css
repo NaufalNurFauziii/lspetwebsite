@@ -2702,7 +2702,7 @@ a:focus {
 }
 
 .footer_section .footer_contact .contact_link_box a:hover {
-  color: #f7444e;
+  color: #059200;
 }
 
 .footer_section .footer-logo {
@@ -2744,7 +2744,7 @@ a:focus {
 }
 
 .footer_section .footer_social a:hover {
-  color: #f7444e;
+  color: #059200;
 }
 
 .footer_section .map_container {
@@ -2822,7 +2822,7 @@ li.nav-item ul li a {
 }
 
 li.nav-item ul li a:hover, li.nav-item ul li a:focus {
-    color: #f7444e;
+    color: #059200;
 }
 
 .banner_page_head {
@@ -2835,8 +2835,8 @@ li.nav-item ul li a:hover, li.nav-item ul li a:focus {
     padding-top: 220px;
     padding-bottom: 220px;
     margin-top: 7rem;
-    margin-left: 9rem;
-    margin-right: 9rem;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 0rem;
     border-radius: 5px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -3319,9 +3319,111 @@ form input[type="submit"]:focus {
         width: auto;
         font-size: 14px;
     }
-
+    /* Beranda Section */
     .skema-title {
         font-size: 20px;
+    }
+    .navbar-nav a {
+      font-size: 20px;
+    }
+    .nav-item .dropdown-menu{
+      width: 330px;
+    }
+    .nav-item .dropdown-menu a{
+      font-size: 18px;
+    }
+    li.nav-item ul {
+    background: #fff;
+    border: solid #000 1px;
+    border-radius: 0;
+    padding: 10px 40px;
+    margin-left: 5px;
+    box-shadow: 4px 4px 0px 0 #215aaf;
+    width: 100px;
+    height: 100px;
+    }
+
+    li.nav-item ul li {
+        /* float: left; */
+        width: 400px;
+        margin: 6px 0;
+    }
+    body p {
+      font-size: 15px;
+    }
+    .slider_section .carousel{
+      height: 105vh;
+    }
+    .skema_section {
+      height: 33vh;
+    }
+    .data_section {
+      padding-top: 8%;
+      padding-bottom: 8%;
+    }
+    .data_section .mobile-responsive {
+      padding-left: 13%;
+      padding-right: 13%;
+    }
+    .asesor_section {
+      height: 33vh;
+    }
+    .news_section {
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+    .news_section .heading_container .heading_news{
+      width: 400px;
+    }
+    .news_section .heading_container h2 {
+      padding-left: 3%;
+    }
+    .news_section .heading_container .btn-box {
+      width: 200px;
+    }
+    .news_section .heading_container .btn1 {
+      padding-left: 7%;
+    }
+    .news_section .container {
+      display: inline;
+    }
+    .news_section .container .card {
+      width: 320px;
+      height: 530px;
+
+    }
+    .news_section .container .card .card-title{
+      font-size: 22px;
+    }
+    .partner_row {
+      display: none;
+    }
+    .partnership_section .container .partner_container img {
+      width: 50px;
+    }
+    .partnership_section {
+      padding-top: 0rem;
+      padding-bottom: 0rem;
+    }
+    .widget_menu h3 {
+      padding-top: 7%;
+      margin-bottom: 0%;
+    }
+    .widget_menu ul {
+      padding-top: 1%;
+      margin-top: 0%;
+    }
+    /* Tentang Kami Section */
+    .banner_page_head {
+      margin-left: 5%;
+      margin-right: 5%;
+      padding-top: 25%;
+      height: 10vh;
+    }
+    .banner_page_head .titlepage h3{
+      margin-left: 27%;
+      margin-right: 27%;
+
     }
 }
 @media(max-width: 992px){
