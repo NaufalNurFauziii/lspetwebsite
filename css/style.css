@@ -431,10 +431,6 @@ a:focus {
   color: #215aaf;
 }
 
-.data_section .mobile-responsive {
-  display: none;
-}
-
 .data_section .data_container p {
   /* font-weight: bold; */
 }
@@ -777,6 +773,7 @@ a:focus {
     color: #1a1a1a;
     line-height: 1.4;
     margin-bottom: 14px;
+    height: 90px;
 }
 
 /* Default button */
@@ -928,6 +925,7 @@ a:focus {
     color: #1a1a1a;
     line-height: 1.4;
     margin-bottom: 14px;
+    height: 100px;
 }
 
 /* Default button */
@@ -1078,6 +1076,7 @@ a:focus {
     color: #1a1a1a;
     line-height: 1.4;
     margin-bottom: 14px;
+    height: 90px;
 }
 
 /* Default button */
@@ -1227,6 +1226,7 @@ a:focus {
     color: #1a1a1a;
     line-height: 1.4;
     margin-bottom: 14px;
+    height: 90px;
 }
 
 /* Default button */
@@ -1264,7 +1264,10 @@ a:focus {
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
-
+.skema-section-detail .list{
+    margin-left: 8%;
+    padding-top: 1rem;
+}
 .skema-top {
     display: flex;
     justify-content: space-between;
@@ -1818,10 +1821,11 @@ a:focus {
   justify-content: center;
   background-color: #215aaf;
   width: 100%;
-  /* margin-bottom: 2rem; */
-  
+  /* margin-bottom: 2rem; */  
 } 
-
+.data_section .mobile-responsive {
+  display: none;
+}
 .company-profile {
   padding-top: 3rem;
 }
@@ -3349,7 +3353,7 @@ form input[type="submit"]:focus {
         margin: 6px 0;
     }
     body p {
-      font-size: 15px;
+      font-size: 17px;
     }
     .slider_section .carousel{
       height: 105vh;
@@ -3361,9 +3365,15 @@ form input[type="submit"]:focus {
       padding-top: 8%;
       padding-bottom: 8%;
     }
+    .data_section .container {
+      display: none;
+    }
     .data_section .mobile-responsive {
-      padding-left: 13%;
-      padding-right: 13%;
+      display: inline;
+    }
+    .data_section .container-mobile {
+      padding-left: 9%;
+      padding-right: 9%;
     }
     .asesor_section {
       height: 33vh;
@@ -3417,13 +3427,475 @@ form input[type="submit"]:focus {
     .banner_page_head {
       margin-left: 5%;
       margin-right: 5%;
-      padding-top: 25%;
-      height: 10vh;
+      padding-top: 0%;
+      height: 8vh;
     }
     .banner_page_head .titlepage h3{
       margin-left: 27%;
       margin-right: 27%;
+      margin-bottom: 20%;
+      margin-top: 20%;
+      font-size: 30px;
+    }
+    .about_section .container h2 {
+      font-size: 25px;
+      padding-bottom: 3%;
+    }
+    .about_section {
+      padding-top: 10%;
+      padding-bottom: 5%;
+    }
+    .about_section .container {
+      padding-bottom: 1%;
+    }
+    .data_section .data_container_about {
+      display: none;
+    }
+    .data_section .mobile-responsive-about .data_container_about_mobile {
+      display: inline;
+      background-color: #215aaf;
+    }
+    .about_section .container .container2 .visi .image-container img {
+      width: 380px;
+      margin-left: 0rem;
+    }
+    .about_section .container .container2 .visi {
+      display: flex;
+      flex-direction: column;
+    }
+    .about_section .visi .image-container {
+      order: 1;
+    }
+    .about_section .visi .visi-container {
+      order: 2;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    .about_section .container .visi h4 {
+      padding-top: 5%;
+    }
+    .about_section .container .container2 .misi .image-container img {
+      width: 380px;
+      padding-top: 0%;
+      margin-top: 5%;
+      margin-bottom: 0%;
+      margin-right: 0rem;
+    }
+    .about_section .container .container2 .misi {
+      display: flex;
+      flex-direction: column;
+    }
+    .about_section .container .container2 .misi .misi-container ol{
+      margin-right: 3%;
+    }
+    .about_section .container .misi h4 {
+      padding-top: 5%;
+      margin-top: 0%;
+    }
+    /* halaman skema section */
+    .banner_page_head_skema {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 0%;
+      padding-top: 0%;
+      height: 8vh;
+    }
+    .banner_page_head_skema .titlepage h3{
+      margin-left: 24%;
+      margin-right: 24%;
+      margin-bottom: 20%;
+      margin-top: 17%;
+      font-size: 30px;
+    }
+    .skemas-section .skemas-title {
+      font-size: 25px;
+      padding-bottom: 3%;
+      padding-top: 0%;
+    }
+    .skemas-section {
+      padding-top: 0%;
+      padding-bottom: 0%;
+      margin-top: 10%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .skemas-section .description-skema {
+      text-align: justify;
+    }
+    .skemas-section .skemas-grid {
+      display: flex;
+      flex-direction: column;
+      height: 600px;
+    }
+    .skemas-section .skemas-grid .skema-item img{
+      height: 400px;
+    }
+    .skema-item img {
+        transform: scale(1.05);
+    }
 
+    /* ====== OVERLAY BASE STYLE ====== */
+    .skema-overlay-plts,
+    .skema-overlay-pltb,
+    .skema-overlay-pltmh,
+    .skema-overlay-pltbg {
+        position: absolute;
+        inset: 0;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        opacity: 0;
+        transition: .35s ease-in-out;
+    }
+    .skema-item .skema-overlay-plts,
+    .skema-item .skema-overlay-pltb,
+    .skema-item .skema-overlay-pltmh,
+    .skema-item .skema-overlay-pltbg {
+        opacity: 1;
+    }
+
+    .skema-overlay-plts {
+        background: linear-gradient(to top, rgba(250, 253, 39, 0.8), rgba(0, 80, 0, 0));
+    }
+
+    .skema-overlay-pltb {
+        background: linear-gradient(to top, rgba(0, 60, 120, 0.8), rgba(0, 60, 120, 0));
+    }
+
+    .skema-overlay-pltmh {
+        background: linear-gradient(to top, rgba(46, 112, 235, 0.8), rgba(90, 45, 0, 0));
+    }
+
+    .skema-overlay-pltbg {
+        background: linear-gradient(to top, rgba(0, 100, 60, 0.8), rgba(0, 100, 60, 0));
+    }
+    /* halaman skema plts section */
+    .banner_page_head_plts {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 0%;
+      padding-top: 0%;
+      height: 8vh;
+    }
+    .banner_page_head_plts .titlepage h3{
+      margin-left: 24%;
+      margin-right: 24%;
+      margin-bottom: 20%;
+      margin-top: 17%;
+      font-size: 30px;
+    }
+    .skema-section {
+      margin-top: 0%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .skema-section .skema-top {
+      margin-top: 10%;
+    }
+    .skema-section .skema-title {
+      margin-bottom: 0%;
+    }
+    .skema-section .skema-top li{
+      font-size: 14px;
+    }
+    .skema-section .container-skema-plts {
+      grid-template-columns: repeat(2,1fr);
+      margin-bottom: 5%;
+    }
+    .skema-section .container-skema-plts .card {
+      width: 180px;
+      height: 440px;
+    }
+    .skema-section .container-skema-plts .card .card-body .btn{
+      margin-left: 8%;
+      margin-right: 8%;
+    }
+    .skema-section .container-skema-plts .card .card-title {
+      height: 130px;
+      font-size: 15px;
+    }
+    .pagination li {
+      font-size: 18px;
+    }
+    /* halaman skema pltb section */
+    .banner_page_head_pltb {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 0%;
+      padding-top: 0%;
+      height: 8vh;
+    }
+    .banner_page_head_pltb .titlepage h3{
+      margin-left: 24%;
+      margin-right: 24%;
+      margin-bottom: 20%;
+      margin-top: 17%;
+      font-size: 30px;
+    }
+    .skema-section {
+      margin-top: 0%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .skema-section .skema-top {
+      margin-top: 10%;
+    }
+    .skema-section .skema-title {
+      margin-bottom: 0%;
+    }
+    .skema-section .skema-top li{
+      font-size: 14px;
+    }
+    .skema-section .container-skema-pltb {
+      grid-template-columns: repeat(2,1fr);
+      margin-bottom: 5%;
+    }
+    .skema-section .container-skema-pltb .card {
+      width: 180px;
+      height: 440px;
+    }
+    .skema-section .container-skema-pltb .card .card-body .btn{
+      margin-left: 8%;
+      margin-right: 8%;
+    }
+    .skema-section .container-skema-pltb .card .card-title {
+      height: 130px;
+      font-size: 15px;
+    }
+    .pagination li {
+      font-size: 18px;
+    }
+    /* halaman skema pltmh section */
+    .banner_page_head_pltmh {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 0%;
+      padding-top: 0%;
+      height: 8vh;
+    }
+    .banner_page_head_pltmh .titlepage h3{
+      margin-left: 24%;
+      margin-right: 24%;
+      margin-bottom: 20%;
+      margin-top: 17%;
+      font-size: 30px;
+    }
+    .skema-section {
+      margin-top: 0%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .skema-section .skema-top {
+      margin-top: 10%;
+    }
+    .skema-section .skema-title {
+      margin-bottom: 0%;
+    }
+    .skema-section .skema-top li{
+      font-size: 14px;
+    }
+    .skema-section .container-skema-pltmh {
+      grid-template-columns: repeat(2,1fr);
+      margin-bottom: 5%;
+    }
+    .skema-section .container-skema-pltmh .card {
+      width: 180px;
+      height: 440px;
+    }
+    .skema-section .container-skema-pltmh .card .card-body .btn{
+      margin-left: 8%;
+      margin-right: 8%;
+    }
+    .skema-section .container-skema-pltmh .card .card-title {
+      height: 130px;
+      font-size: 15px;
+    }
+    .pagination li {
+      font-size: 18px;
+    }
+    /* halaman skema pltbg section */
+    .banner_page_head_pltbg {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 0%;
+      padding-top: 0%;
+      height: 8vh;
+    }
+    .banner_page_head_pltbg .titlepage h3{
+      margin-left: 24%;
+      margin-right: 24%;
+      margin-bottom: 20%;
+      margin-top: 17%;
+      font-size: 30px;
+    }
+    .skema-section {
+      margin-top: 0%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .skema-section .skema-top {
+      margin-top: 10%;
+    }
+    .skema-section .skema-title {
+      margin-bottom: 0%;
+    }
+    .skema-section .skema-top li{
+      font-size: 14px;
+    }
+    .skema-section .container-skema-pltbg {
+      grid-template-columns: repeat(2,1fr);
+      margin-bottom: 5%;
+    }
+    .skema-section .container-skema-pltbg .card {
+      width: 180px;
+      height: 440px;
+    }
+    .skema-section .container-skema-pltbg .card .card-body .btn{
+      margin-left: 8%;
+      margin-right: 8%;
+    }
+    .skema-section .container-skema-pltbg .card .card-title {
+      height: 130px;
+      font-size: 15px;
+    }
+    .pagination li {
+      font-size: 18px;
+    }
+    /* halaman detail skema plts */
+    .skema-section-detail {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 0%;
+    } 
+    .skema-section-detail .skema-title {
+      margin-top: 10%;
+      margin-bottom: 0%;
+    }
+    .skema-section-detail .skema-top .breadcrumb {
+      font-size: 10px;
+    }
+    .skema-section-detail .list{
+      padding-top: 0%;
+      margin-left: 0%;
+    }
+    .skema-section-detail .table td{
+      font-size: 12px;
+    }
+    /* halaman list berita section */
+    .news_slider_section .carousel .caption h2 {
+      margin-left: 13%;
+      margin-right: 8%;
+    }
+    .news_slider_section .carousel .caption p {
+      margin-left: 8%;
+    }
+    .news_slider_section .carousel .caption .btn-box {
+      margin-left: 0%;
+    }
+    .news_section {
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-top: 10%;
+      margin-right: 0%;
+    }
+    .news_section .header_news h2 {
+      font-size: 25px;
+    }
+    .news_section .blog .card {
+      width: 370px;
+    }
+    .news_section .blog .card .card-img-top{
+      height: 200px;
+    }
+    .news_section .blog .card .card-text {
+      display: none;
+    }
+    /* halaman detail berita section */
+    .detail-section {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .detail-section .breadcrumb {
+      font-size: 14px;
+    }
+    .detail-section .banner-detail img {
+      width: 370px;
+    }
+    .detail-section .header-detail h2{
+      font-size: 25px;
+    }
+    .detail-section .caption-detail {
+      padding-bottom: 0%;
+    }
+    .detail-section .caption-detail li {
+      font-size: 17px;
+    }
+    .detail-section .galeri-container h5{
+      font-size: 18px;
+    }
+    .detail-section .caption-detail .galeri-container .galeri-detail{
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2,1fr);
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+    .detail-section .caption-detail .galeri-container .galeri-detail img{
+      width: 150px;
+    }
+    .other-news {
+      display: none;
+    }
+    .modal-content {
+      margin: auto;
+      margin-top: 65%;
+      margin-bottom: 5rem;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+    /* hubungi kami section */
+    .banner_page_head_contact {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 0%;
+      padding-top: 0%;
+      height: 8vh;
+    }
+    .banner_page_head_contact .titlepage h3{
+      margin-left: 24%;
+      margin-right: 24%;
+      margin-bottom: 20%;
+      margin-top: 19%;
+      font-size: 30px;
+    }
+    .contact-section {
+      padding-top: 10%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 0%;
+
+    }
+    .contact-section .contact-container {
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+    .contact-section .contact-container h2 {
+      font-size: 25px;
+    }
+    .contact-section .icon-circle {
+      width: 50px;
+      height: 50px;
+    }
+    .contact-form .form-row{
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+    .contact-form .name {
+      width: 316px;
+      margin-right: 10%;
     }
 }
 @media(max-width: 992px){
