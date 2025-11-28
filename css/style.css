@@ -1934,9 +1934,14 @@ a:focus {
 }
 
 /* news section */
+.news_section {
+  margin-top: 0%;
+  padding-top: 0%;
+}
 .news_section .heading_container{
-  padding-top: 3rem;
+  padding-top: 0rem;
   padding-left: 7%;
+  margin-top: 0%;
   display: flex;
 }
 
@@ -3314,6 +3319,9 @@ form input[type="submit"]:focus {
   .form-row {
     flex-direction: column;
   }
+  .navbar-brand img{
+    width: 100px;
+  }
       .table {
         width: 100%;
         border-radius: 0;
@@ -3356,7 +3364,7 @@ form input[type="submit"]:focus {
       font-size: 16px;
     }
     .slider_section .carousel{
-      height: 95vh;
+      height: 75vh;
     }
     .about_section .container .btn-box {
       margin-top: 5%;
@@ -3376,8 +3384,9 @@ form input[type="submit"]:focus {
       margin-top: 0%;
     }
     .data_section {
-      padding-top: 7%;
-      padding-bottom: 7%;
+      padding-top: 0%;
+      margin-top: 7%;
+      padding-bottom: 0%;
     }
     .data_section .container {
       display: none;
@@ -3483,12 +3492,12 @@ form input[type="submit"]:focus {
     .data_section .data_container_about {
       display: none;
     }
-    .data_section{
-      padding-top: 0%;
-    }
     .about_section .container .container2 .visi .image-container img {
       width: 380px;
       margin-left: 0rem;
+    }
+    .about_section .container2{
+      padding-top: 10%;
     }
     .about_section .container .container2 .visi {
       display: flex;
@@ -3651,7 +3660,7 @@ form input[type="submit"]:focus {
       height: 400px;
     }
     .skema-section .container-skema-plts .card img{
-      width: 180px;
+      width: 100%;
       height: auto;
     }
     .skema-section .container-skema-plts .card .card-body .btn{
@@ -3705,7 +3714,7 @@ form input[type="submit"]:focus {
       height: 400px;
     }
     .skema-section .container-skema-pltb .card img{
-      width: 180px;
+      width: 100%;
       height: auto;
     }
     .skema-section .container-skema-pltb .card .card-body .btn{
@@ -3747,7 +3756,7 @@ form input[type="submit"]:focus {
       margin-bottom: 0%;
     }
     .skema-section .skema-top li{
-      font-size: 14px;
+      font-size: 10px;
     }
     .skema-section .container-skema-pltmh {
       grid-template-columns: repeat(2,1fr);
@@ -3759,7 +3768,7 @@ form input[type="submit"]:focus {
       height: 400px;
     }
     .skema-section .container-skema-pltmh .card img{
-      width: 180px;
+      width: 100%;
       height: auto;
     }
     .skema-section .container-skema-pltmh .card .card-body .btn{
@@ -3801,7 +3810,7 @@ form input[type="submit"]:focus {
       margin-bottom: 0%;
     }
     .skema-section .skema-top li{
-      font-size: 14px;
+      font-size: 13px;
     }
     .skema-section .container-skema-pltbg {
       grid-template-columns: repeat(2,1fr);
@@ -3813,7 +3822,7 @@ form input[type="submit"]:focus {
       height: 400px;
     }
     .skema-section .container-skema-pltbg .card img{
-      width: 180px;
+      width: 100%;
       height: auto;
     }
     .skema-section .container-skema-pltbg .card .card-body .btn{
