@@ -3353,17 +3353,31 @@ form input[type="submit"]:focus {
         margin: 6px 0;
     }
     body p {
-      font-size: 17px;
+      font-size: 16px;
     }
     .slider_section .carousel{
-      height: 105vh;
+      height: 95vh;
+    }
+    .about_section .container .btn-box {
+      margin-top: 5%;
     }
     .skema_section {
-      height: 33vh;
+      height: 22vh;
+    }
+    .skema_section .container .caption {
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+    .skema_section .container h2 {
+      font-size: 25px;
+      margin-bottom: 0%;
+    }
+    .skema_section .container .btn-box {
+      margin-top: 0%;
     }
     .data_section {
-      padding-top: 8%;
-      padding-bottom: 8%;
+      padding-top: 7%;
+      padding-bottom: 7%;
     }
     .data_section .container {
       display: none;
@@ -3372,17 +3386,29 @@ form input[type="submit"]:focus {
       display: inline;
     }
     .data_section .container-mobile {
-      padding-left: 9%;
-      padding-right: 9%;
+      padding-left: 7%;
+      padding-right: 7%;
+    }
+    .data_section .container-mobile h2 {
+      font-size: 25px;
     }
     .asesor_section {
-      height: 33vh;
+      height: 22vh;
+    }
+    .asesor_section .container .caption {
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+    .asesor_section .container .caption h2 {
+      font-size: 25px;
+      margin-bottom: 0%;
     }
     .news_section {
-      padding-top: 2%;
+      padding-top: 0%;
+      margin-top: 0%;
       padding-bottom: 2%;
     }
-    .news_section .heading_container .heading_news{
+    .news_section .heading_container .heading_news h2{
       width: 400px;
     }
     .news_section .heading_container h2 {
@@ -3398,9 +3424,8 @@ form input[type="submit"]:focus {
       display: inline;
     }
     .news_section .container .card {
-      width: 320px;
+      width: 390px;
       height: 530px;
-
     }
     .news_section .container .card .card-title{
       font-size: 22px;
@@ -3897,6 +3922,52 @@ form input[type="submit"]:focus {
       width: 316px;
       margin-right: 10%;
     }
+    footer {
+      padding-top: 10%;
+      padding-bottom: 10%;
+    }
+    footer a {
+      font-size: 10px;
+    }
+    /* halaman tuk section */
+    .banner_page_head_tuk {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 0%;
+      padding-top: 0%;
+      height: 8vh;
+    }
+    .banner_page_head_tuk .titlepage h3{
+      margin-left: 24%;
+      margin-right: 24%;
+      margin-bottom: 20%;
+      margin-top: 15%;
+      font-size: 30px;
+    }
+    .tuk-section {
+      margin: 5%;
+      margin-top: 10%;
+    }
+    .tuk-section .tuk-top {
+      padding-left: 0%;
+    }
+    .tuk-section .tuk-top .tuk-head h2 {
+      font-size: 25px;
+    }
+    .tuk-section .tuk-subtitle {
+      padding-left: 5%;
+      padding-right: 5%;
+      text-align: justify;
+    }
+    .tuk-section .container-tuk {
+      padding-left: 5%;
+      padding-right: 5%;
+      grid-template-columns: repeat(2,1fr);
+    }
+    .tuk-section .container-tuk p {
+      font-size: 13px;
+    }
+    
 }
 @media(max-width: 992px){
 
