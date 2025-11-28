@@ -3362,7 +3362,7 @@ form input[type="submit"]:focus {
       margin-top: 5%;
     }
     .skema_section {
-      height: 22vh;
+      height: 45%;
     }
     .skema_section .container .caption {
       padding-top: 5%;
@@ -3386,14 +3386,14 @@ form input[type="submit"]:focus {
       display: inline;
     }
     .data_section .container-mobile {
-      padding-left: 7%;
-      padding-right: 7%;
+      padding-left: 6%;
+      padding-right: 6%;
     }
     .data_section .container-mobile h2 {
       font-size: 25px;
     }
     .asesor_section {
-      height: 22vh;
+      height: 45%;
     }
     .asesor_section .container .caption {
       padding-top: 5%;
@@ -3408,11 +3408,15 @@ form input[type="submit"]:focus {
       margin-top: 0%;
       padding-bottom: 2%;
     }
-    .news_section .heading_container .heading_news h2{
-      width: 400px;
+    .news_section .heading_container {
+      padding-top: 0%;
     }
-    .news_section .heading_container h2 {
-      padding-left: 3%;
+    .news_section .heading_container .heading_news h2{
+      width: 300px;
+    }
+    .news_section .heading_container h2{
+      margin-left: 3%;
+      font-size: 25px;
     }
     .news_section .heading_container .btn-box {
       width: 200px;
@@ -3424,11 +3428,14 @@ form input[type="submit"]:focus {
       display: inline;
     }
     .news_section .container .card {
-      width: 390px;
+      width: 95%;
       height: 530px;
+      margin-bottom: 15px;
+      margin-left: 3%;
+      margin-right: 3%;
     }
     .news_section .container .card .card-title{
-      font-size: 22px;
+      font-size: 20px;
     }
     .partner_row {
       display: none;
@@ -3476,9 +3483,8 @@ form input[type="submit"]:focus {
     .data_section .data_container_about {
       display: none;
     }
-    .data_section .mobile-responsive-about .data_container_about_mobile {
-      display: inline;
-      background-color: #215aaf;
+    .data_section{
+      padding-top: 0%;
     }
     .about_section .container .container2 .visi .image-container img {
       width: 380px;
@@ -3516,6 +3522,16 @@ form input[type="submit"]:focus {
     .about_section .container .misi h4 {
       padding-top: 5%;
       margin-top: 0%;
+    }
+    .company-profile .file-info {
+      text-align: left;
+    }
+    .company-profile .file-row {
+      padding-top: 0%;
+      padding-bottom: 0%;
+    }
+    .company-profile .file-actions .pdf-icon{
+      display: none;
     }
     /* halaman skema section */
     .banner_page_head_skema {
@@ -3612,11 +3628,12 @@ form input[type="submit"]:focus {
     }
     .skema-section {
       margin-top: 0%;
-      margin-left: 5%;
-      margin-right: 5%;
+      margin-left: 6%;
+      margin-right: 6%;
     }
     .skema-section .skema-top {
       margin-top: 10%;
+      margin-bottom: 0%;
     }
     .skema-section .skema-title {
       margin-bottom: 0%;
@@ -3627,10 +3644,15 @@ form input[type="submit"]:focus {
     .skema-section .container-skema-plts {
       grid-template-columns: repeat(2,1fr);
       margin-bottom: 5%;
+      gap: 10px;
     }
     .skema-section .container-skema-plts .card {
+      width: auto;
+      height: 400px;
+    }
+    .skema-section .container-skema-plts .card img{
       width: 180px;
-      height: 440px;
+      height: auto;
     }
     .skema-section .container-skema-plts .card .card-body .btn{
       margin-left: 8%;
@@ -3660,11 +3682,12 @@ form input[type="submit"]:focus {
     }
     .skema-section {
       margin-top: 0%;
-      margin-left: 5%;
-      margin-right: 5%;
+      margin-left: 6%;
+      margin-right: 6%;
     }
     .skema-section .skema-top {
       margin-top: 10%;
+      margin-bottom: 0%;
     }
     .skema-section .skema-title {
       margin-bottom: 0%;
@@ -3675,10 +3698,15 @@ form input[type="submit"]:focus {
     .skema-section .container-skema-pltb {
       grid-template-columns: repeat(2,1fr);
       margin-bottom: 5%;
+      gap: 10px;
     }
     .skema-section .container-skema-pltb .card {
+      width: auto;
+      height: 400px;
+    }
+    .skema-section .container-skema-pltb .card img{
       width: 180px;
-      height: 440px;
+      height: auto;
     }
     .skema-section .container-skema-pltb .card .card-body .btn{
       margin-left: 8%;
@@ -3708,11 +3736,12 @@ form input[type="submit"]:focus {
     }
     .skema-section {
       margin-top: 0%;
-      margin-left: 5%;
-      margin-right: 5%;
+      margin-left: 6%;
+      margin-right: 6%;
     }
     .skema-section .skema-top {
       margin-top: 10%;
+      margin-bottom: 0%;
     }
     .skema-section .skema-title {
       margin-bottom: 0%;
@@ -3723,10 +3752,15 @@ form input[type="submit"]:focus {
     .skema-section .container-skema-pltmh {
       grid-template-columns: repeat(2,1fr);
       margin-bottom: 5%;
+      gap: 10px;
     }
     .skema-section .container-skema-pltmh .card {
+      width: auto;
+      height: 400px;
+    }
+    .skema-section .container-skema-pltmh .card img{
       width: 180px;
-      height: 440px;
+      height: auto;
     }
     .skema-section .container-skema-pltmh .card .card-body .btn{
       margin-left: 8%;
@@ -3756,11 +3790,12 @@ form input[type="submit"]:focus {
     }
     .skema-section {
       margin-top: 0%;
-      margin-left: 5%;
-      margin-right: 5%;
+      margin-left: 6%;
+      margin-right: 6%;
     }
     .skema-section .skema-top {
       margin-top: 10%;
+      margin-bottom: 0%;
     }
     .skema-section .skema-title {
       margin-bottom: 0%;
@@ -3771,10 +3806,15 @@ form input[type="submit"]:focus {
     .skema-section .container-skema-pltbg {
       grid-template-columns: repeat(2,1fr);
       margin-bottom: 5%;
+      gap: 10px;
     }
     .skema-section .container-skema-pltbg .card {
+      width: auto;
+      height: 400px;
+    }
+    .skema-section .container-skema-pltbg .card img{
       width: 180px;
-      height: 440px;
+      height: auto;
     }
     .skema-section .container-skema-pltbg .card .card-body .btn{
       margin-left: 8%;
@@ -3828,7 +3868,7 @@ form input[type="submit"]:focus {
       font-size: 25px;
     }
     .news_section .blog .card {
-      width: 370px;
+      width: 360px;
     }
     .news_section .blog .card .card-img-top{
       height: 200px;
@@ -3962,10 +4002,18 @@ form input[type="submit"]:focus {
     .tuk-section .container-tuk {
       padding-left: 5%;
       padding-right: 5%;
+      gap: 5px;
       grid-template-columns: repeat(2,1fr);
     }
     .tuk-section .container-tuk p {
       font-size: 13px;
+    }
+    .tuk-section .container-tuk .card .card-title{
+      font-size: 13px;
+    }
+    .tuk-section .container-tuk .card img{
+      width: 90px;
+      height: auto;
     }
     
 }
