@@ -3364,7 +3364,7 @@ form input[type="submit"]:focus {
       font-size: 16px;
     }
     .slider_section .carousel{
-      height: 75vh;
+      height: 100vh;
     }
     .about_section .container .btn-box {
       margin-top: 5%;
@@ -3395,8 +3395,8 @@ form input[type="submit"]:focus {
       display: inline;
     }
     .data_section .container-mobile {
-      padding-left: 6%;
-      padding-right: 6%;
+      padding-left: 7%;
+      padding-right: 7%;
     }
     .data_section .container-mobile h2 {
       font-size: 25px;
@@ -3421,7 +3421,7 @@ form input[type="submit"]:focus {
       padding-top: 0%;
     }
     .news_section .heading_container .heading_news h2{
-      width: 300px;
+      width: 100%;
     }
     .news_section .heading_container h2{
       margin-left: 3%;
@@ -3437,11 +3437,10 @@ form input[type="submit"]:focus {
       display: inline;
     }
     .news_section .container .card {
-      width: 95%;
-      height: 530px;
+      width: 100%;
+      height: 100%;
       margin-bottom: 15px;
-      margin-left: 3%;
-      margin-right: 3%;
+      
     }
     .news_section .container .card .card-title{
       font-size: 20px;
@@ -3450,9 +3449,12 @@ form input[type="submit"]:focus {
       display: none;
     }
     .partnership_section .container .partner_container img {
-      width: 50px;
+      width: 30px;
+      height: 30px;
     }
     .partnership_section {
+      margin-left: 5%;
+      margin-right: 5%;
       padding-top: 0rem;
       padding-bottom: 0rem;
     }
@@ -3466,9 +3468,10 @@ form input[type="submit"]:focus {
     }
     /* Tentang Kami Section */
     .banner_page_head {
+      padding-top: 0%;
       margin-left: 5%;
       margin-right: 5%;
-      padding-top: 0%;
+      width: 90%;
       height: 8vh;
     }
     .banner_page_head .titlepage h3{
@@ -3476,10 +3479,10 @@ form input[type="submit"]:focus {
       margin-right: 27%;
       margin-bottom: 20%;
       margin-top: 20%;
-      font-size: 30px;
+      font-size: 25px;
     }
     .about_section .container h2 {
-      font-size: 25px;
+      font-size: 20px;
       padding-bottom: 3%;
     }
     .about_section {
@@ -3493,7 +3496,8 @@ form input[type="submit"]:focus {
       display: none;
     }
     .about_section .container .container2 .visi .image-container img {
-      width: 380px;
+      width: 100%;
+      height: 100%;
       margin-left: 0rem;
     }
     .about_section .container2{
@@ -3514,8 +3518,10 @@ form input[type="submit"]:focus {
     .about_section .container .visi h4 {
       padding-top: 5%;
     }
+  
     .about_section .container .container2 .misi .image-container img {
-      width: 380px;
+      width: 100%;
+      height: 100%;
       padding-top: 0%;
       margin-top: 5%;
       margin-bottom: 0%;
@@ -3535,6 +3541,9 @@ form input[type="submit"]:focus {
     .company-profile .file-info {
       text-align: left;
     }
+    .company-profile .file-title {
+      font-size: 13px;
+    }
     .company-profile .file-row {
       padding-top: 0%;
       padding-bottom: 0%;
@@ -3553,12 +3562,12 @@ form input[type="submit"]:focus {
     .banner_page_head_skema .titlepage h3{
       margin-left: 24%;
       margin-right: 24%;
-      margin-bottom: 20%;
-      margin-top: 17%;
-      font-size: 30px;
+      margin-bottom: 18%;
+      margin-top: 18%;
+      font-size: 25px;
     }
     .skemas-section .skemas-title {
-      font-size: 25px;
+      font-size: 20px;
       padding-bottom: 3%;
       padding-top: 0%;
     }
@@ -3629,11 +3638,11 @@ form input[type="submit"]:focus {
       height: 8vh;
     }
     .banner_page_head_plts .titlepage h3{
-      margin-left: 24%;
-      margin-right: 24%;
-      margin-bottom: 20%;
-      margin-top: 17%;
-      font-size: 30px;
+      margin-left: 27%;
+      margin-right: 27%;
+      margin-bottom: 18%;
+      margin-top: 18%;
+      font-size: 25px;
     }
     .skema-section {
       margin-top: 0%;
@@ -3657,19 +3666,22 @@ form input[type="submit"]:focus {
     }
     .skema-section .container-skema-plts .card {
       width: auto;
-      height: 400px;
+      height: 350px;
     }
     .skema-section .container-skema-plts .card img{
       width: 100%;
       height: auto;
     }
     .skema-section .container-skema-plts .card .card-body .btn{
-      margin-left: 8%;
-      margin-right: 8%;
+      margin-top: 5%;
+      padding-left: 8%;
+      padding-right: 8%;
+      font-size: 12px;
+      width: 100%;
     }
     .skema-section .container-skema-plts .card .card-title {
-      height: 130px;
-      font-size: 15px;
+      height: 90px;
+      font-size: 12px;
     }
     .pagination li {
       font-size: 18px;
@@ -3687,7 +3699,7 @@ form input[type="submit"]:focus {
       margin-right: 24%;
       margin-bottom: 20%;
       margin-top: 17%;
-      font-size: 30px;
+      font-size: 25px;
     }
     .skema-section {
       margin-top: 0%;
@@ -3711,19 +3723,22 @@ form input[type="submit"]:focus {
     }
     .skema-section .container-skema-pltb .card {
       width: auto;
-      height: 400px;
+      height: 370px;
     }
     .skema-section .container-skema-pltb .card img{
       width: 100%;
       height: auto;
     }
     .skema-section .container-skema-pltb .card .card-body .btn{
-      margin-left: 8%;
-      margin-right: 8%;
+      margin-top: 5%;
+      padding-left: 8%;
+      padding-right: 8%;
+      font-size: 12px;
+      width: 100%;
     }
     .skema-section .container-skema-pltb .card .card-title {
-      height: 130px;
-      font-size: 15px;
+      height: 110px;
+      font-size: 12px;
     }
     .pagination li {
       font-size: 18px;
@@ -3741,7 +3756,7 @@ form input[type="submit"]:focus {
       margin-right: 24%;
       margin-bottom: 20%;
       margin-top: 17%;
-      font-size: 30px;
+      font-size: 25px;
     }
     .skema-section {
       margin-top: 0%;
@@ -3765,19 +3780,22 @@ form input[type="submit"]:focus {
     }
     .skema-section .container-skema-pltmh .card {
       width: auto;
-      height: 400px;
+      height: 380px;
     }
     .skema-section .container-skema-pltmh .card img{
       width: 100%;
       height: auto;
     }
     .skema-section .container-skema-pltmh .card .card-body .btn{
-      margin-left: 8%;
-      margin-right: 8%;
+      margin-top: 5%;
+      padding-left: 8%;
+      padding-right: 8%;
+      font-size: 12px;
+      width: 100%;
     }
     .skema-section .container-skema-pltmh .card .card-title {
-      height: 130px;
-      font-size: 15px;
+      height: 110px;
+      font-size: 12px;
     }
     .pagination li {
       font-size: 18px;
@@ -3795,7 +3813,7 @@ form input[type="submit"]:focus {
       margin-right: 24%;
       margin-bottom: 20%;
       margin-top: 17%;
-      font-size: 30px;
+      font-size: 25px;
     }
     .skema-section {
       margin-top: 0%;
@@ -3819,22 +3837,29 @@ form input[type="submit"]:focus {
     }
     .skema-section .container-skema-pltbg .card {
       width: auto;
-      height: 400px;
+      height: 350px;
     }
     .skema-section .container-skema-pltbg .card img{
       width: 100%;
       height: auto;
     }
     .skema-section .container-skema-pltbg .card .card-body .btn{
-      margin-left: 8%;
-      margin-right: 8%;
+      margin-top: 5%;
+      padding-left: 8%;
+      padding-right: 8%;
+      font-size: 12px;
+      width: 100%;
     }
     .skema-section .container-skema-pltbg .card .card-title {
-      height: 130px;
-      font-size: 15px;
+      height: 90px;
+      font-size: 12px;
+    }
+    .pagination {
+      padding-left: 5%;
+      padding-right: 5%;
     }
     .pagination li {
-      font-size: 18px;
+      font-size: 15px;
     }
     /* halaman detail skema plts */
     .skema-section-detail {
@@ -3861,6 +3886,9 @@ form input[type="submit"]:focus {
       margin-left: 13%;
       margin-right: 8%;
     }
+    .news_slider_section .carousel .caption {
+      /* margin-bottom: 0%; */
+    }
     .news_slider_section .carousel .caption p {
       margin-left: 8%;
     }
@@ -3877,7 +3905,9 @@ form input[type="submit"]:focus {
       font-size: 25px;
     }
     .news_section .blog .card {
-      width: 360px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     .news_section .blog .card .card-img-top{
       height: 200px;
@@ -3894,7 +3924,9 @@ form input[type="submit"]:focus {
       font-size: 14px;
     }
     .detail-section .banner-detail img {
-      width: 370px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     .detail-section .header-detail h2{
       font-size: 25px;
@@ -3905,6 +3937,9 @@ form input[type="submit"]:focus {
     .detail-section .caption-detail li {
       font-size: 17px;
     }
+    .detail-section .galeri-container {
+      /* margin-right: 5%; */
+    }
     .detail-section .galeri-container h5{
       font-size: 18px;
     }
@@ -3913,10 +3948,14 @@ form input[type="submit"]:focus {
       gap: 10px;
       grid-template-columns: repeat(2,1fr);
       padding-left: 3%;
-      padding-right: 3%;
+      /* padding-right: 3%; */
+      /* margin-right: 10%; */
     }
     .detail-section .caption-detail .galeri-container .galeri-detail img{
-      width: 150px;
+      width: 100%;
+      height: 100%;
+      /* padding-right: 15 */
+      object-fit: cover;
     }
     .other-news {
       display: none;
@@ -3943,7 +3982,7 @@ form input[type="submit"]:focus {
       margin-right: 24%;
       margin-bottom: 20%;
       margin-top: 19%;
-      font-size: 30px;
+      font-size: 25px;
     }
     .contact-section {
       padding-top: 10%;
@@ -3957,18 +3996,17 @@ form input[type="submit"]:focus {
       padding-right: 0%;
     }
     .contact-section .contact-container h2 {
-      font-size: 25px;
+      font-size: 20px;
     }
     .contact-section .icon-circle {
-      width: 50px;
-      height: 50px;
+      display: none;
     }
     .contact-form .form-row{
       margin-left: 1%;
       margin-right: 1%;
     }
     .contact-form .name {
-      width: 316px;
+      width: 100%;
       margin-right: 10%;
     }
     footer {
@@ -3980,18 +4018,18 @@ form input[type="submit"]:focus {
     }
     /* halaman tuk section */
     .banner_page_head_tuk {
+      padding-top: 0%;
       margin-left: 5%;
       margin-right: 5%;
-      margin-bottom: 0%;
-      padding-top: 0%;
+      width: 90%;
       height: 8vh;
     }
     .banner_page_head_tuk .titlepage h3{
       margin-left: 24%;
       margin-right: 24%;
       margin-bottom: 20%;
-      margin-top: 15%;
-      font-size: 30px;
+      margin-top: 17%;
+      font-size: 25px;
     }
     .tuk-section {
       margin: 5%;
@@ -4001,16 +4039,16 @@ form input[type="submit"]:focus {
       padding-left: 0%;
     }
     .tuk-section .tuk-top .tuk-head h2 {
-      font-size: 25px;
+      font-size: 20px;
     }
     .tuk-section .tuk-subtitle {
-      padding-left: 5%;
-      padding-right: 5%;
+      padding-left: 0%;
+      padding-right: 0%;
       text-align: justify;
     }
     .tuk-section .container-tuk {
-      padding-left: 5%;
-      padding-right: 5%;
+      padding-left: 0%;
+      padding-right: 0%;
       gap: 5px;
       grid-template-columns: repeat(2,1fr);
     }

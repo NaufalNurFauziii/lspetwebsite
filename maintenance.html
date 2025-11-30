@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/logo-lsp.png">
+<title>Under Maintenance</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        background: #f5f7fa;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 600px;
+        padding: 20px;
+    }
+    img {
+        width: 250px;
+    }
+
+    .icon {
+        font-size: 90px;
+        color: #4a5568;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+        color: #2d3748;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #4a5568;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    .loading {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #e2e8f0;
+        border-top: 5px solid #2d3748;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto;
+    }
+
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+
+    /* RESPONSIVE BREAKPOINTS */
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 26px;
+        }
+        p {
+            font-size: 14px;
+        }
+        .icon {
+            font-size: 70px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        h1 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 17px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div class="icon"><img src="images/logo-lsp.png" alt=""></div>
+    <h1>Website Under Maintenance</h1>
+    <p>Kami sedang melakukan pembaruan sistem untuk meningkatkan kualitas pelayanan.  
+       Silakan kembali lagi dalam beberapa saat.</p>
+    <div class="loading"></div>
+</div>
+</body>
+</html>
